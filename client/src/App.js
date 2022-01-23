@@ -1,21 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useState} from 'react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={require('../src/PMS-logo.png')} alt=""/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to Project Management System
         </p>
+      
+        <form>
+         <label>Enter the courses for each cohort:</label>
+         <input type="text"></input>
+         <label>Enter the classrooms:</label>
+         <input type="text"></input>
+         </form>
+
+        
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          /*className="App-link"*/
+          href="schedule.js"
+          /*target="_blank"
+          rel="noopener noreferrer"*/
         >
-          Learn React
+          <button class="button">View schedule</button>
         </a>
       </header>
     </div>
